@@ -1,0 +1,56 @@
+.map-wrapper {
+  height: 50vh;
+  padding: 20px;
+  display: flex;
+}
+.map-wrapper-less-width {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info-wrapper {
+  display: block;
+  position: relative;
+  transition: width 0.5s ease;
+  overflow: hidden;
+  border: 1px solid #ccd3db;
+}
+.location-info-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: #fb761e;
+  cursor: pointer;
+}
+.location-info {
+  padding: 10px;
+}
+.marker-text {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: -40px;
+  width: 100px;
+  left: -40px;
+}
+.pin2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: 115px;
+  border-radius: 50%;
+  border: 8px solid #fb761e;
+  width: 8px;
+  height: 8px;
+}
+
+.pin2::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  bottom: -30px;
+  left: -6px;
+  border: 10px solid transparent;
+  border-top: 17px solid #fb761e;
+}

@@ -1,0 +1,31 @@
+.header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 5em;
+  font-size: 1rem;
+
+  .tab, .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover {
+    color: #fb761e !important;
+  }
+  .active {
+    color: #37b7e5;
+  }
+  select {
+    border: none;
+    font-size: 1rem;
+  }
+  select:hover {
+    color: #fb761e;
+    cursor: pointer;
+  }
+}
